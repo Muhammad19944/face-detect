@@ -1,0 +1,233 @@
+@import "./fonts.css";
+@import "./rebuild.css";
+@import "./helper.css";
+@import "./typograph.css";
+
+:root {
+    --font-light: 'Gilroy-Light';
+    --font-regular: 'Gilroy-Regular';
+    --font-medium: 'Gilroy-Medium';
+    --font-semibold: 'Gilroy-Semibold';
+    --main-color: #181c32;
+    --dark: #252631;
+    --success: #6DD230;
+    --danger: #FF5F68;
+    --pink: #FE4D97;
+    --primary: #2565e5;
+    --primary-2: #71D0FD;
+    --primary-dark: #252631;
+    --secondary-dark: #778CA2;
+    --secondary-dark-2: #98A9BC;
+    --text-outline: #E8ECEF;
+    --main-primary: #2565e5;
+    --main-background: #F8FAFB;
+    --main-background-2: #F2F4F6;
+    --grey: #778CA2;
+    --vs-primary: 26,92,255;
+    --vs-gray-2: 244,247,248;
+    --vs-gray-1: 249,252,253;
+}
+
+body {
+    font-family: var(--font-regular);
+    color: var(--main-color);
+}
+
+.auth-view-container {
+    max-width: 500px;
+    width: 100%;
+}
+
+.form-group__input {
+    background-color: #f5f8fa;
+    color: #5e6278;
+    transition: color .2s ease,background-color .2s ease;
+    box-shadow: none!important;
+    display: block;
+    width: 100%;
+    line-height: 1.5;
+    background-clip: padding-box;
+    border: 1px solid #f5f8fa;
+    appearance: none;
+    outline: transparent;
+    font-family: var(--font-medium);
+    font-size: 1rem;
+}
+
+.form-group__input:focus {
+    background-color: #eef3f7;
+    border-color: #eef3f7;
+    color: #5e6278;
+    transition: color .2s ease, background-color .2s ease;
+}
+
+.form-group__input-lg {
+    min-height: calc(1.5em + (1.65rem + 2px));
+    padding: .825rem 1.25rem;
+    border-radius: .475rem;
+}
+
+.canvas-container canvas {
+    display: block;
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.user-wrap:hover .user-wrap__dropdown {
+    opacity: 1;
+    visibility: visible;
+}
+
+.user-wrap__image {
+    width: 45px;
+    height: 45px;
+}
+
+.user-wrap__dropdown {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 45px;
+    min-width: 175px;
+    overflow: hidden;
+}
+
+.dropdown-items:hover {
+    background: #eef3f7;
+}
+
+.app-container {
+    max-width: 1450px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.vs-table-content {
+    --vs-color: var(--vs-primary);
+    width: 100%;
+    border-radius: 16px;
+}
+
+.vs-table {
+    width: 100%;
+    font-size: .9rem;
+    margin: 0;
+    overflow: auto;
+}
+
+.vs-table table {
+    margin: 0;
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 500px;
+    border: 0;
+}
+
+.vs-table__thead {
+    width: 100%;
+}
+
+.vs-table__tr {
+    padding: 5px;
+    border: 0;
+}
+
+.vs-table__thead .vs-table__th:first-child {
+    border-radius: 14px 0 0 0;
+}
+
+.vs-table__thead .vs-table__th {
+    background: rgba(var(--vs-gray-2),1);
+}
+
+.vs-table__th {
+    padding: 10px 12px;
+    text-align: left;
+    -webkit-transition: all .25s ease;
+    transition: all .25s ease;
+    font-size: .8rem;
+    border: 0;
+}
+
+.vs-table__th__content {
+    justify-content: flex-start;
+    transition: all .25s ease;
+}
+
+.vs-table__th__content, .vs-table__th__content__icons {
+    display: flex;
+    align-items: center;
+}
+
+.vs-table__tr {
+    padding: 5px;
+    border: 0;
+}
+
+.vs-table__tr:first-of-type .vs-table__td:first-child {
+    border-radius: 0 0 0 15px;
+}
+
+.vs-table__td:first-child {
+    border-radius: 15px 0 0 15px;
+}
+
+.vs-table__tr:hover .vs-table__td {
+    background: rgba(var(--vs-gray-1),1);
+}
+
+.vs-table__td {
+    padding: 10px 12px;
+    transition: all .25s ease;
+    font-size: .8rem;
+    border: 0;
+}
+
+tr:nth-child(2n) {
+    background-color: transparent;
+}
+
+/*.app-pagination ul {*/
+/*    list-style: none;*/
+/*}*/
+
+/*.app-pagination ul li {*/
+/*    width: 36px;*/
+/*    height: 36px;*/
+/*    transition: all .3s;*/
+/*}*/
+
+/*.app-pagination ul li:hover,*/
+.icon-button:hover {
+    background: #009ef7;
+    color: #fff;
+}
+
+.icon-button {
+    width: 36px;
+    height: 36px;
+    outline: transparent;
+    background: transparent;
+    border: none;
+    border-radius: 100%;
+    transition: all .3s;
+}
+
+.activity-form-view {
+    padding: 10vw 10vw 2vw;
+}
+
+.row {
+    margin: 0 -15px;
+}
+
+.row > div {
+    margin: 15px;
+}
+
+.row-4 {
+    width: calc(33.33333% - 30px);
+}

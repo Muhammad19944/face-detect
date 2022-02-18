@@ -1,0 +1,24 @@
+
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: local('Gilroy-Light'),
+    url("../fonts/Gilroy-Light.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'Gilroy-Regular';
+    src: local('Gilroy-Regular'),
+        url("../fonts/Gilroy-Light.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: local('Gilroy-Medium'),
+    url("../fonts/Gilroy-Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'Gilroy-Semibold';
+    src: local('Gilroy-Semibold'),
+    url("../fonts/Gilroy-Semibold.woff2") format("woff2");
+}
